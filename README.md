@@ -2,7 +2,7 @@
 
 ## Author: Brandon Mizutani
 
-Version: 1.0.0 (PR URL: [PR URL](https://github.com/bran2miz/web-scraper/pull/1))
+Version: 1.0.0 (PR URL: [PR URL](https://github.com/bran2miz/web-scraper/pull/3))
 
 ## Overview
 
