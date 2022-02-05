@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 
 def get_passages(url):
     page = requests.get(url)
-    matches = BeautifulSoup(page.content, "html.parser").find_all(title="Wikipedia:Citation needed")
-    return [match.find_parent('p').text for match in matches]
+    citations = BeautifulSoup(page.content, "html.parser").find_all(title="Wikipedia:Citation needed")
+    return [citation.find_parent('p').text for citation in citations]
 
 def get_citations_needed_count(url):
     passages = get_passages(url)
